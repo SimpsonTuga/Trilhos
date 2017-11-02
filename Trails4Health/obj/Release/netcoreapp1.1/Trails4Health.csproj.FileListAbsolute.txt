@@ -1,0 +1,10 @@
+D:\Trilhos\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.deps.json
+D:\Trilhos\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.runtimeconfig.json
+D:\Trilhos\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.runtimeconfig.dev.json
+D:\Trilhos\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.dll
+D:\Trilhos\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.pdb
+D:\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.csprojResolveAssemblyReference.cache
+D:\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.csproj.CoreCompileInputs.cache
+D:\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.AssemblyInfo.cs
+D:\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.dll
+D:\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.pdb
