@@ -18,3 +18,13 @@ C:\Users\Tutuwo\Documents\GitHub\Trilhos\Trails4Health\obj\Release\netcoreapp1.1
 C:\Users\Tutuwo\Documents\GitHub\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.AssemblyInfo.cs
 C:\Users\Tutuwo\Documents\GitHub\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.dll
 C:\Users\Tutuwo\Documents\GitHub\Trilhos\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.pdb
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.deps.json
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.runtimeconfig.json
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.runtimeconfig.dev.json
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.dll
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\bin\Release\netcoreapp1.1\Trails4Health.pdb
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.csprojResolveAssemblyReference.cache
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.csproj.CoreCompileInputs.cache
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.AssemblyInfo.cs
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.dll
+C:\Users\Tutuwo\Documents\GitHub\Trilhos2\Trails4Health\obj\Release\netcoreapp1.1\Trails4Health.pdb
