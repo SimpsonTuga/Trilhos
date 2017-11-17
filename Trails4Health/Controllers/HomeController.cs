@@ -31,5 +31,18 @@ namespace Trails4Health.Controllers
         {
             return View();
         }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Trilhos()
+        {
+            return View();
+        }
+        public IActionResult Guias()
+        {
+            return View();
+        }
+
     }
 }
