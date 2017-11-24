@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Trails4Health
+namespace WebApplication9
 {
     public class Program
     {

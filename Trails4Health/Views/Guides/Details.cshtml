@@ -1,0 +1,62 @@
+@model Trails4Health.Models.Guide
+
+@{
+    ViewData["Title"] = "Details";
+}
+<head>
+    <style type="text/css">
+        .container {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0.6);
+            broder-radius: 4px;
+            margin-top: 100Px;
+        }
+
+
+
+        .btn1 {
+            height: 45px;
+            width: 180px;
+            padding: 5px 30px;
+            color: saddlebrown;
+            border-radius: 4px;
+            border: none;
+            background-color: sandybrown;
+            border-bottom: 2px solid saddlebrown;
+        }
+    </style>
+</head>
+<div class="container">
+    <h2>Details</h2>
+
+<div>
+    <h4>Guide</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdGuide" class="btn btn-warning">Edit</a> |
+    <a asp-action="Index"class="btn btn1">Back to List</a>
+</div>
+</div>

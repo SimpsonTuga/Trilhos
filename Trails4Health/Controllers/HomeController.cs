@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Trails4Health.Controllers
+namespace WebApplication9.Controllers
 {
     public class HomeController : Controller
     {
@@ -27,22 +27,29 @@ namespace Trails4Health.Controllers
             return View();
         }
 
+        public IActionResult Login()
+        {
+            ViewData["Message"] = "Your login page.";
+
+            return View();
+        }
+
+        public IActionResult Trilhos()
+        {
+            ViewData["Message"] = "Your login page.";
+
+            return View();
+        }
+        public IActionResult Guia()
+        {
+            ViewData["Message"] = "Your login page.";
+
+            return View();
+        }
+
         public IActionResult Error()
         {
             return View();
         }
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Trilhos()
-        {
-            return View();
-        }
-        public IActionResult Guias()
-        {
-            return View();
-        }
-
     }
 }
