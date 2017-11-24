@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Trails4Health.Models;
+using Trails4Health.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication9
 {
@@ -29,6 +32,9 @@ namespace WebApplication9
         {
             // Add framework services.
             services.AddMvc();
+            services.AddDbContext<Trails4HealthDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ConnectionStringTrails"))
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,5 +62,9 @@ namespace WebApplication9
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
+    }
+
+    internal class FakeProductRepository
+    {
     }
 }
