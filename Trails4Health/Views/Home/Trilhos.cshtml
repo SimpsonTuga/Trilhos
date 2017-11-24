@@ -1,19 +1,49 @@
 ﻿@{
-    ViewData["Title"] = "Trilhos";
+    ViewData["Title"] = "Partilhar";
 }
-<div class="panel">
-    <h1>   Trilhos</h1>
-    
-    <p>
-        Escolher trilhos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <select>
-            <option value="volvo">Escolher Trilho</option>
-            <option value="saab">Opção1</option>
-            <option value="opel">Opção2</option>
-            <option value="audi">Opção3</option>
-        </select>
-    </p>
-    <br>&nbsp;
-    <input type="submit" name="submit" value="Partilhar Informação" class="btn1">
-    <br>&nbsp;
-</div>
+<head>
+    <style type="text/css">
+        .container {
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0.6);
+            broder-radius: 4px;
+            margin-top: 100Px;
+        }
+
+
+
+        .btn1 {
+            height: 45px;
+            width: 180px;
+            padding: 5px 30px;
+            color: saddlebrown;
+            border-radius: 4px;
+            border: none;
+            background-color: sandybrown;
+            border-bottom: 2px solid saddlebrown;
+        }
+    </style>
+</head>
+<div class="container">
+    Escolher trilhos:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select>
+    <option value="">Escolher Trilho</option>
+    <option value="">Trilho 1</option>
+    <option value="">Trilho 2</option>
+    <option value="">Trilho 3</option>
+</select></br>
+
+
+    <p>Trilho Escolhido:</p>
+    <p>Dist:</p>
+    <p></p>Dificuldade</p>
+    <p>Galeria:</p>
+
+
+</br>
+
+<p style="text-align:center">
+    <a class="btn1" asp-area="" asp-controller="Home" asp-action="Index">Partilhar</a>
+</p></div>
