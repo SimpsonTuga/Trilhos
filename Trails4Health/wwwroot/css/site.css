@@ -1,10 +1,6 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background: url("../images/serra-wallpaper.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* Wrapping element */
@@ -38,14 +34,4 @@ textarea {
     .carousel-caption {
         display: none;
     }
-}
-
-footer {
-    color: sandybrown;
-    font-size: 15px;
-}
-
-
-.panel{
-    padding-left:15px;
 }
