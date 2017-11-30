@@ -13,16 +13,16 @@ namespace Trails4Health.Data
         public DbSet<Guide> Guide { get; set; }
         public DbSet<Trails> Trails { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {   
+        {
             //Relaçoes e modificaçoes da tabela guide (vai ter N para N com a Tabela trilhos)
-           // modelBuilder.Entity<Guide>()
-               //.HasKey(z => new { z.GuideID});
+            // modelBuilder.Entity<Guide>()
+            //.HasKey(z => new { z.GuideID});
             //Relação da tabela Trilho
-            modelBuilder.Entity<Trails>()
-               // .HasKey(x => new { x.TrailId })
-                .HasOne(c=>c.Dificulty)
-                .WithMany(v=>v.Trails)
-                .HasForeignKey(c=>c.DificultyID)
+            //modelBuilder.Entity<Trails>()
+                // .HasKey(x => new { x.TrailId })
+                //.HasOne(c => c.Dificulty)
+                //.WithMany(v => v.Trails)
+                //.HasForeignKey(c => c.DificultyID)
 
         }
     }
