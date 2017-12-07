@@ -41,11 +41,11 @@ namespace Trails4Health
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<UsersDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("ConnectionStringTrailsLogin")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<UsersDbContext>()
                 .AddDefaultTokenProviders();
 
             services.AddMvc();
