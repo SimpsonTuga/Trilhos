@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplication9.Controllers
+namespace Trails4Health.Controllers
 {
     public class HomeController : Controller
     {
