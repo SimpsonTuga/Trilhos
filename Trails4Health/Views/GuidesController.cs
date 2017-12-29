@@ -34,7 +34,7 @@ namespace Trails4Health.Views
             }
 
             var guide = await _context.Guide
-                .SingleOrDefaultAsync(m => m.IdGuide == id);
+                .SingleOrDefaultAsync(m => m.GuideId == id);
             if (guide == null)
             {
                 return NotFound();
@@ -73,7 +73,7 @@ namespace Trails4Health.Views
                 return NotFound();
             }
 
-            var guide = await _context.Guide.SingleOrDefaultAsync(m => m.IdGuide == id);
+            var guide = await _context.Guide.SingleOrDefaultAsync(m => m.GuideId == id);
             if (guide == null)
             {
                 return NotFound();
@@ -88,7 +88,7 @@ namespace Trails4Health.Views
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdGuide,Name,Phone,Email")] Guide guide)
         {
-            if (id != guide.IdGuide)
+            if (id != guide.GuideId)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace Trails4Health.Views
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!GuideExists(guide.IdGuide))
+                    if (!GuideExists(guide.GuideId))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace Trails4Health.Views
             }
 
             var guide = await _context.Guide
-                .SingleOrDefaultAsync(m => m.IdGuide == id);
+                .SingleOrDefaultAsync(m => m.GuideId == id);
             if (guide == null)
             {
                 return NotFound();
@@ -139,7 +139,7 @@ namespace Trails4Health.Views
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var guide = await _context.Guide.SingleOrDefaultAsync(m => m.IdGuide == id);
+            var guide = await _context.Guide.SingleOrDefaultAsync(m => m.GuideId == id);
             _context.Guide.Remove(guide);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
@@ -147,7 +147,7 @@ namespace Trails4Health.Views
 
         private bool GuideExists(int id)
         {
-            return _context.Guide.Any(e => e.IdGuide == id);
+            return _context.Guide.Any(e => e.GuideId == id);
         }
     }
 }
