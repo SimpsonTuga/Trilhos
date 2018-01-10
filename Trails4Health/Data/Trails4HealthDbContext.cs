@@ -34,7 +34,11 @@ namespace Trails4Health.Data
                 .HasOne(gt => gt.Trail)
                 .WithMany(gt => gt.GuideTrail)
                 .HasForeignKey(gt => gt.TrailId);
-            
+            //PK das tabelas
+            modelBuilder.Entity<Guide>()
+                .HasKey(g => g.GuideId);
+            modelBuilder.Entity<Trail>()
+                .HasKey(t => t.DifficultyId);
         }
     }
 }

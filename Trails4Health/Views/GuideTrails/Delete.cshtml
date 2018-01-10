@@ -1,0 +1,36 @@
+@model Trails4Health.Models.GuideTrail
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>GuideTrail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="TrailId" />
+        <input type="hidden" asp-for="GuideId" />
+        <dt>
+            @Html.DisplayNameFor(model => model.Guide)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Guide.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Trail)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Trail.DifficultyId)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>

@@ -39,7 +39,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\css\" />
