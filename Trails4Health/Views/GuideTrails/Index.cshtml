@@ -25,10 +25,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Guide.Email)
+                @Html.DisplayFor(modelItem => item.Guide.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Trail.DifficultyId)
+                @Html.DisplayFor(modelItem => item.Trail.Name)
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

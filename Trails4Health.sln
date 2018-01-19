@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trails4Health", "Trails4Health\Trails4Health.csproj", "{FB04489E-4C05-45B5-B045-940E285D46B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trails4Health", "Trails4Health\Trails4Health.csproj", "{FB04489E-4C05-45B5-B045-940E285D46B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

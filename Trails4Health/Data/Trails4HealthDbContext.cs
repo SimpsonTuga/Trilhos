@@ -37,8 +37,9 @@ namespace Trails4Health.Data
             //PK das tabelas
             modelBuilder.Entity<Guide>()
                 .HasKey(g => g.GuideId);
+            //
             modelBuilder.Entity<Trail>()
-                .HasKey(t => t.DifficultyId);
+                .HasKey(t => t.TrailsId);
         }
     }
 }

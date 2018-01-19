@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Trails4Health.Models;
 using Trails4Health.Data;
-using Trails4Health.Models;
 using Trails4Health.Services;
 
 namespace Trails4Health
@@ -63,7 +62,7 @@ namespace Trails4Health
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            SeedData.EnsurePopulated(app.ApplicationServices);
+            
 
             if (env.IsDevelopment())
             {
@@ -88,6 +87,7 @@ namespace Trails4Health
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            SeedData.EnsurePopulated(app.ApplicationServices);
         }
     }
 

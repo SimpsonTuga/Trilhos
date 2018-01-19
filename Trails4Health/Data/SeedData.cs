@@ -24,18 +24,18 @@ namespace Trails4Health.Data
         private static void EnsureTrailsPopulated(Trails4HealthDbContext dbContext)
         {
             dbContext.Difficulty.AddRange(
-                new Difficulty { DifficultyID=1, Name = "Amador" },
-                new Difficulty { DifficultyID=2, Name = "Casual" },
-                new Difficulty { DifficultyID=3, Name = "Experienciado" },
-                new Difficulty { DifficultyID=4, Name = "Proficional" }
+                new Difficulty {  Name = "Amador" },
+                new Difficulty {  Name = "Casual" },
+                new Difficulty {  Name = "Experienciado" },
+                new Difficulty {  Name = "Proficional" }
             );
 
             dbContext.Trail.AddRange(
-                new Trail { TrailsId = 1, Name = "Triho da Beira", Distance = 23845, State = true, DifficultyId = 1 },
-                new Trail { TrailsId = 2, Name = "Trilho do Pico", Distance = 27245, State = true, DifficultyId = 3 },
-                new Trail { TrailsId = 3, Name = "Trilho da Boca do Inferno", Distance = 19845, State = true, DifficultyId = 3 },
-                new Trail { TrailsId = 4, Name = "Trilho Serrano", Distance = 37845, State = true, DifficultyId = 4 },
-                new Trail { TrailsId = 5, Name = "Trilho Planalto Laranja", Distance = 21845, State = true, DifficultyId = 2 }
+                new Trail {  Name = "Triho da Beira", Distance = 23845, State = true, DifficultyId = 1 },
+                new Trail {  Name = "Trilho do Pico", Distance = 27245, State = true, DifficultyId = 3 },
+                new Trail {  Name = "Trilho da Boca do Inferno", Distance = 19845, State = true, DifficultyId = 3 },
+                new Trail {  Name = "Trilho Serrano", Distance = 37845, State = true, DifficultyId = 4 },
+                new Trail {  Name = "Trilho Planalto Laranja", Distance = 21845, State = true, DifficultyId = 2 }
             );
        
         }

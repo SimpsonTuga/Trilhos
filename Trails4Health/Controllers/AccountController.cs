@@ -12,6 +12,8 @@ using Microsoft.Extensions.Options;
 using Trails4Health.Models;
 using Trails4Health.Models.AccountViewModels;
 using Trails4Health.Services;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Trails4Health.Data;
 
 namespace Trails4Health.Controllers
 {
@@ -28,6 +30,7 @@ namespace Trails4Health.Controllers
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
+            RoleManager<IdentityRole> roleManager,
             IOptions<IdentityCookieOptions> identityCookieOptions,
             IEmailSender emailSender,
             ISmsSender smsSender,
@@ -39,6 +42,8 @@ namespace Trails4Health.Controllers
             _emailSender = emailSender;
             _smsSender = smsSender;
             _logger = loggerFactory.CreateLogger<AccountController>();
+
+            UserSeedData.EnsurePopulatedAsync(userManager, roleManager).Wait();
         }
 
         //

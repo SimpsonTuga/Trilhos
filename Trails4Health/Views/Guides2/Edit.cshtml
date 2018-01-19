@@ -3,12 +3,16 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<style>
+    text-info {
+        background-color: white;
+    }
+</style>
+<h2 class="text-info">Edit</h2>
 
-<h2>Edit</h2>
-
-<form asp-action="Edit">
+<form asp-action="Edit"  class="text-info">
     <div class="form-horizontal">
-        <h4>Guide</h4>
+        <h4 class="text-info">Guide</h4>
         <hr />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <input type="hidden" asp-for="GuideId" />
@@ -49,7 +53,7 @@
 </form>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-default">Back to List</a>
 </div>
 
 @section Scripts {
